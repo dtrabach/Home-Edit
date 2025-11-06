@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap');
 
 :root {
-  --bg: #fbfaf8;
-  --card: #ffffff;
-  --accent: #c9b99b;
-  --accent-hover: #b99a68;
-  --muted: #555555;
+  --bg: #e8e1d3;         
+  --card: #f0eee9;       
+  --accent: #6f4128;     
+  --accent-hover: #3c2415; 
+  --text: #5b5916;       
+  --muted: #4f6b4a;  
   --maxw: 1000px;
   --gap: 18px;
 }
@@ -19,7 +20,7 @@
 body {
   font-family: 'Lato', sans-serif;
   background: linear-gradient(160deg, #fbfaf8, #f5f3ef);
-  color: #2f2f2f;
+  color: var(--text);
   line-height: 1.6;
 }
 
@@ -66,6 +67,8 @@ header {
   font-family: 'Playfair Display', serif;
   font-size: 1.8rem;
   color: #2f2f2f;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .subtitle {
@@ -108,16 +111,20 @@ nav a.active {
   margin-bottom: 40px;
 }
 
-h2 {
-  color: #2f2f2f;
+h2, h3 {
+  font-family: 'Playfair Display', serif;
+  text-transform: uppercase; 
+  color: var(--muted);
   margin-bottom: 15px;
   border-bottom: 2px solid var(--accent);
   display: inline-block;
   padding-bottom: 5px;
+  letter-spacing: 1px;
 }
 
 p {
   margin-bottom: 15px;
+  color: var(--text);
 }
 
 .featured-image {
